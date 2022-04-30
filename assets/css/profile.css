@@ -72,7 +72,7 @@
   vertical-align: top;
   width: 36px;
 }
-@media (min-width: 57.8125em) {
+/* @media (min-width: 57.8125em) {
   .author__avatar {
     display: block;
     width: auto;
@@ -81,7 +81,7 @@
 }
 .author__avatar img {
   max-width: 220px;
-}
+} */
 .author__content {
   display: table-cell;
   vertical-align: top;
