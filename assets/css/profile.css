@@ -70,6 +70,7 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
+  width: 200px;
 }
 @media (min-width: 57.8125em) {
   .author__avatar {
