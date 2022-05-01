@@ -1,0 +1,157 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(128, 127, 162);
+}
+.windows{
+    position: relative;
+    top: 100px;
+    width: 1000px;
+    height: 600px;
+    background-image: url("../images/p3.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.b,
+.c,
+.d,
+.e{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    /* 设置阴影 */
+    filter: drop-shadow(4px 4px 12px rgba(0,0,0,.5));
+    background-size: cover;
+    opacity: .7;
+    transition: .5s;
+}
+.b::after,
+.c::after,
+.d::after,
+.e::after{
+    content: "";
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    background-image: url("../images/p3.jpg");
+}
+.b{
+    left: -400px;
+    transform: rotateZ(100deg);
+    overflow: hidden;
+}
+.b::after{
+    transform: rotateZ(-100deg);
+}
+
+.c{
+    left: -400px;
+    transform: rotateZ(-100deg);
+    overflow: hidden;
+}
+.c::after{
+    transform: rotateZ(100deg);
+}
+
+.d{
+    right: -400px;
+    transform: rotateZ(105deg);
+    overflow: hidden;
+}
+.d::after{
+    transform: rotateZ(-105deg);
+}
+
+.e{
+    right: -400px;
+    transform: rotateZ(-100deg);
+    overflow: hidden;
+}
+.e::after{
+    transform: rotateZ(100deg);
+}
+.name{
+    opacity: 0;
+    font: 900 50px '';
+    /* 设置字体间距 */
+    letter-spacing: 10px;
+    color: rgb(60,60,70);
+    transition: .5s;
+}
+/* 设置动画 */
+.windows:hover .b{
+    left: -560px;
+}
+.windows:hover .c{
+    left: -620px;
+}
+.windows:hover .d{
+    right: -560px;
+}
+.windows:hover .e{
+    right: -620px;
+}
+.windows:hover .name{
+    opacity: 1;
+}
+.content{
+    position: absolute;
+    top: 500px;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.content .tagline{
+    font-style: italic;
+    text-align: right;
+}
+h1 {
+  font-size: 32px;
+  font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 60px 0 30px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 720px) {
+}
+
+/* Portrait phone screens */
+
+@media screen and (max-width: 480px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 16px;
+  }
+
+  pre, code {
+    font-size: 12px;
+  }
+
+  .masthead {
+    padding-top: 0;
+  }
+
+}
